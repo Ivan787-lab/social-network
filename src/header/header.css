@@ -1,0 +1,5 @@
+.header {
+    background-color: rgb(70, 79, 121);
+    border-radius: 5px;
+    grid-area: h;/*имя блока в сетке*/
+}
