@@ -2,4 +2,41 @@
     background-color: rgb(70, 79, 121);
     border-radius: 5px;
     grid-area: p;/*имя блока в сетке*/
+    padding: 10px;
+}
+
+.profile__description {
+    display: flex;
+}
+
+.description__img-person {
+    width: 200px;
+}
+
+.description__person-name {
+    margin-left: 15px;
+}
+
+.message-block__create-message {
+    margin-top: 50px;
+}
+
+.create-message__my-post-h2 {
+    margin-bottom: 10px;
+}
+
+.post-block__description-post {
+    display: flex;
+}
+
+.profile__post-block {
+    margin-top: 50px;
+}
+
+.description-post__img {
+    width: 50px;
+}
+
+.description-post__post-p {
+    margin-top: 20px;
 }

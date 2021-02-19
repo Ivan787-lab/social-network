@@ -1,9 +1,11 @@
 import React from 'react'
 import "./header.css";
+import logo from '../img/logo.png'
+
 function Create_header () {
     return (
         <div className = 'header'>
-            Header
+            <img className = 'img-logo' src = {logo} />
         </div>
     )
 }

@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+
+.wrapper-content {
+  grid-area: p;
+  background-color: rgb(70, 79, 121);;
+}

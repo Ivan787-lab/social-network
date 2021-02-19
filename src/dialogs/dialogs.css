@@ -1,0 +1,30 @@
+.dialogs {
+    width: 100%;
+    display: flex;
+    border: 1px solid #000;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.dialog__name {
+    margin: 15px 0;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.dialog__name:hover {
+    background-color: #434852;
+}
+
+.message {
+    width: 100%;
+    margin-left: auto;
+}
+
+.message__p {
+    margin: 15px 0;
+    width: 90%;
+    background-color: #60697a;
+}
