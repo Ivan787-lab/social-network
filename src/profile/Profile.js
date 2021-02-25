@@ -2,14 +2,12 @@ import React from 'react'
 import "./profile.css";
 import img_person from '../img/img_avatar.png'
 import My_posts from './posts/Posts';
+import ProfileInfo from './posts/profileInfo/ProfileInfo';
 
 function Create_profile() {
     return (
         <div className='profile'>
-            <div className="profile__description">
-                <img src={img_person} className="description__img-person" />
-                <p className="description__person-name">Ivan Ulanovskiy</p>
-            </div>
+            <ProfileInfo />
             <My_posts />
             
         </div>

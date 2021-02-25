@@ -2,7 +2,7 @@ import React from 'react'
 import "./post.css";
 import img_person from '../../../img/img_avatar.png'
 
-function My_post(props) {
+function Post(props) {
     return (
         <div className="profile__post-block">
             <div className="post-block__description-post">
@@ -14,4 +14,4 @@ function My_post(props) {
     )
 }
 
-export default My_post;
+export default Post;

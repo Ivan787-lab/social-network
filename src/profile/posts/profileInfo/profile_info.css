@@ -1,0 +1,11 @@
+.profile__description {
+    display: flex;
+}
+
+.description__img-person {
+    width: 200px;
+}
+
+.description__person-name {
+    margin-left: 15px;
+}

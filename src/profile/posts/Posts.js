@@ -1,6 +1,6 @@
 import React from 'react';
 import "./posts.css";
-import My_post from './post/Post';
+import Post from './post/Post';
 
 
 function My_posts() {
@@ -11,8 +11,11 @@ function My_posts() {
                 <input type="text" className="create-message__input" />
                 <button className="create-message__button">Add post</button>
             </div>
-            <My_post text = "78"/>
-            
+            <Post text = "78"/>
+            <Post text = "78"/>
+            <Post text = "78"/>
+            <Post text = "78"/>
+            <Post text = "78"/>
         </div>
     )
 }
