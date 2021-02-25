@@ -1,7 +1,10 @@
 import React from 'react';
 import "./posts.css";
 import Post from './post/Post';
-
+let text_of_posts = [
+    { text: "Привет" },
+    {text : "Пока"} ,
+]
 
 function My_posts() {
     return (
@@ -11,11 +14,7 @@ function My_posts() {
                 <input type="text" className="create-message__input" />
                 <button className="create-message__button">Add post</button>
             </div>
-            <Post text = "78"/>
-            <Post text = "78"/>
-            <Post text = "78"/>
-            <Post text = "78"/>
-            <Post text = "78"/>
+            {text_of_posts.map((element) => <Post text = {element.text} />)}
         </div>
     )
 }
