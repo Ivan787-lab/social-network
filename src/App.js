@@ -15,7 +15,7 @@ function App(props) {
       <Create_navbar />
       <div className="wrapper-content">
         <Route exact path = "/" render = {() => <Create_profile text_of_posts = {props.text_of_posts}/>} />
-        <Route path = "/profile" component = {Create_profile}/>
+        <Route path = "/profile" render = {() => <Create_profile text_of_posts = {props.text_of_posts}/>}/>
         <Route path = "/dialogs" render = {() => <My_dialogs dialog_name = {props.dialog_name} messages_item = {props.messages_item} />}/>
       </div>
       </ BrowserRouter>
