@@ -4,12 +4,13 @@ import img_person from '../img/img_avatar.png'
 import My_posts from './posts/Posts';
 import ProfileInfo from './posts/profileInfo/ProfileInfo';
 
-function Create_profile() {
+
+
+function Create_profile(props) {
     return (
         <div className='profile'>
             <ProfileInfo />
-            <My_posts />
-            
+            <My_posts text_of_posts = {props.text_of_posts} />
         </div>
     )
 }
