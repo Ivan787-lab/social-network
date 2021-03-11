@@ -5,12 +5,11 @@ import My_posts from './posts/Posts';
 import ProfileInfo from './posts/profileInfo/ProfileInfo';
 
 
-
 function Create_profile(props) {
     return (
         <div className='profile'>
             <ProfileInfo />
-            <My_posts text_of_posts = {props.text_of_posts} />
+            <My_posts addPost = {props.addPost} text_of_posts = {props.text_of_posts} />
         </div>
     )
 }
