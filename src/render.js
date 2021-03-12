@@ -3,19 +3,20 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import state from "./Data/state.js"
-import { addPost } from "./Data/state";
+//import state from "./Data/state.js"
+import state, { addPost } from "./Data/state";
 import { addMessage } from "./Data/state";
+import {onPostChange} from "./Data/state"
 
-export let renderTree = () => {
+
+export let renderTree = (state) => {
   ReactDOM.render(
     <React.StrictMode>
-      <App addMessage={addMessage} addPost={addPost} state={state} />
+      <App onPostChange = {onPostChange} addMessage={addMessage} addPost={addPost} state={state} />
     </React.StrictMode>,
     document.getElementById('root')
   );
 };
-renderTree()
 
 
 // If you want to start measuring performance in your app, pass a function

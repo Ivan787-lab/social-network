@@ -5,6 +5,7 @@ let state = {
             { text: "Привет", id: 1, like: 2 },
             { text: "Пока", id: 2, like: 5, },
         ],
+        newPostText : "тест"
     },
     dialogs_page: {
         dialog_name: [
@@ -30,13 +31,20 @@ let state = {
 export let addPost = (postText) => {
     let new_post = {text : postText , id : 5 , like : 88}
     state.profile_page.text_of_posts.unshift(new_post);
-    renderTree()
+    state.profile_page.newPostText = "";
+    renderTree(state)
 }
 
 export let addMessage = (messageText) => {
     let newMessage = {text : messageText , id :8}
     state.dialogs_page.messages_item.unshift(newMessage)
-    renderTree()    
+    renderTree(state)    
+}
+
+export let onPostChange = (text) => {
+    state.profile_page.newPostText = text;
+    renderTree(state)    
+
 }
 
 export default state;
